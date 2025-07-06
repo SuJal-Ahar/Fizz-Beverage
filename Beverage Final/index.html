@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="front.css">
+    <title>Fizz</title>
+</head>
+<body>
+    <div>
+        <!-- Header Start -->
+        <div class="header">
+            <video class="video1" onmouseover="this.play()" muted>
+                <source src="Fresh Lemon.webm" type="video/webm">
+            </video>
+            <a href="#" class="logo">
+                <img src="Logo.png" alt="Fizz Logo">
+            </a>
+
+            <div class="bx bx-menu" id="menu-icon">☰</div>
+
+            <ul class="navbar" id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="Flavor.html" target="_blank">Flavors</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Header End -->
+
+        <!-- First Page Start -->
+        <div class="container">
+            <div class="describe">  
+                <h1 class="bold-describe">Elevate Your Thirst with <br> Fizz Delight.</h1> 
+                <p class="small-describe">Fizz, the name synonymous with excellence in the beverage industry. This exceptional company has consistently delighted consumers with its remarkable range of beverages.</p>
+            </div>
+            <video class="videosplash" id="myVideo" muted autoplay loop>
+                <source src="Beverage Animation Transparent0001-0200.webm" type="video/webm">
+            </video>
+        </div> 
+        <!-- First Page End -->
+
+        <!-- Third Page Ingredients Start -->
+        <div class="ingredients-container">
+            <div class="img-container">
+                <img class="image1" src="Can Transparent .png" alt="Fizz Can">
+            </div>
+            
+            <div class="content">
+                <h1>Ingredients</h1>
+                <ul class="ingredients">
+                    <li class="ingredient-item">
+                        <a href="#" class="ingredient-link">Caffeine</a>
+                        <div class="dropdown">
+                            <p>Caffeine was well known by ancient civilisations. They consumed it from natural sources like tea, coffee, cacao beans and cola nuts and appreciated its stimulating effects on the human body.</p>
+                        </div>
+                    </li>
+                    <li class="ingredient-item">
+                        <a href="#" class="ingredient-link">Sucralose</a>
+                        <div class="dropdown">
+                            <p>Sucralose is a non-caloric sweetener made from sugar and therefore, it tastes like sugar. It is produced synthetically and is used in a wide variety of products, including beverages, baked goods, desserts, dairy products, canned fruits and syrups.</p>
+                        </div>
+                    </li>
+                    <li class="ingredient-item">
+                        <a href="#" class="ingredient-link">Water</a>
+                        <div class="dropdown">
+                            <p>Water is a main ingredient of Fizz.</p>
+                        </div>
+                    </li>
+                    <li class="ingredient-item">
+                        <a href="#" class="ingredient-link">Vitamin</a>
+                        <div class="dropdown">
+                            <p>Vitamins are essential micronutrients that are required for maintaining normal body functions.</p>
+                        </div>
+                    </li>
+                    <li class="ingredient-item">
+                        <a href="#" class="ingredient-link">Taurine</a>
+                        <div class="dropdown">
+                            <p>Taurine is an amino acid, naturally occurring in the human body and present in the daily diet. It is involved in a wide range of biological processes.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Third Page Ingredients End -->
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Can 250ml</a></li>
+                        <li><a href="#">Bottle 750ml</a></li>
+                        <li><a href="#">Bottle 1L</a></li>
+                        <li><a href="#">Bottle 2L</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+        // Mobile menu toggle
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.getElementById('navbar');
+
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on links
+        const navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navbar.contains(e.target) && !menuIcon.contains(e.target)) {
+                navbar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

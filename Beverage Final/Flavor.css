@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background: hsl(27, 100%, 84%);
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    flex-direction: column; /* To stack header and carousel vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Align to the top */
+    height: 100vh; /* Set the body to take up the entire viewport height */
+}
+.header {
+    
+    margin-top: 20px; /* Adjust this value to control the vertical space above the header */
+    text-align: center; /* Center-align the header text */
+}
+
+.header h1 {
+	/* font-size: 500px; */
+    font-weight: bolder;
+    margin: 0; 
+}
+
+.carousel{
+	margin-top: 20px;
+    height: 1000px; 
+    /* perspective: 250px;   */
+	/* margin-top: 100px;  */
+    
+}
+.carousel .carousel-item {
+	height: 1000px;
+	width: 500px;
+	background-color: rgba(0, 0, 0, 0.3);
+	/* padding: 50px; */
+	
+	height: auto;
+    border-radius: 15px;
+}
+.img-area {
+	height: 600px;
+	width: 300px;
+	padding-left: 70px;
+	
+	/* margin: 0 auto; */
+	/* overflow: hidden; */
+	
+}
+        .img-area img{
+            width: 350px;
+            margin-top: 20px;	
+        }
+		.testi h4 {
+            font-size: 45px;
+            font-weight: 400;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            color: #000;
+            text-align: center;
+        }

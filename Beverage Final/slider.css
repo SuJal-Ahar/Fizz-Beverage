@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #0a69ed; 
+}
+.carousel{
+    height: 600px; 
+    perspective: 250px;    
+    
+}
+.carousel .carousel-item {
+	/* width: 450px; */
+	height: 600px;
+	width: 300px;
+	background-color: rgba(0, 0, 0, 0.3);
+	/* padding: 50px; */
+	height: auto;
+    border-radius: 15px;
+}
+.img-area {
+	height: 500px;
+	width: 300px;
+	padding-right: 75px;
+	
+	/* margin: 0 auto; */
+	/* overflow: hidden; */
+	
+}
+        .img-area img{
+            width: 300px;	
+        }
+		
+		.img-area ima:hover{
+			width: 350px;
+		}
